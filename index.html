@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+</head>
+<body>
+    <div class="main-content">
+        <form><fieldset>
+            <legend>Customer Info</legend>
+            <label for="name">Name : </label>
+            <input type="text" name="name" required placeholder="Enter your name">
+            <br>
+            <label for="contact">Telephone :</label>
+            <input type="tel" name="contact" required placeholder="pattern-2345678910" pattern="[0-9]{10}">
+            <br>
+            <label for="email">Email : </label>
+            <input type="email" required name="email" placeholder="Enter you email address">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Book</legend>
+                
+                <input list="Book">
+
+                <datalist id="Book">
+                  <option value="XYZ">
+                  <option value="ABC">
+                  <option value="123">
+                  
+                </datalist>
+                            
+                            <label for="quantity">Quntity(maximum 5) : </label>
+                            <input type="number" name="quantity" max="5">
+                            
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Submit">
+
+            </form>
+            
+
+
+
+</body>
+</html>
